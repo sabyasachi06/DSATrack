@@ -1,14 +1,16 @@
 package org.practice;
 
 
-import org.practice.linkedList.DLinkedList;
-import org.practice.linkedList.SLinkedList;
+import org.practice.Recurrsion.Factorial;
+import org.practice.Recurrsion.PrintDecreasingIncreasing;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        DLinkedList ll = new DLinkedList(1);
+
+        // Linked list calls
+        /*DLinkedList ll = new DLinkedList(1);
         System.out.println("====================================");
         ll.printList();
         System.out.println("====================================");
@@ -23,7 +25,11 @@ public class Main {
         ll.removeLast();
         ll.printList();ll.printList();System.out.println("====================================");
         ll.removeFirst();
-        ll.printList();
+        ll.printList();*/
+
+        // Recursion calls
+        PrintDecreasingIncreasing.pdi(5);
+//        System.out.println(Factorial.fact(5));
 
 
     }
