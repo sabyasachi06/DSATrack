@@ -3,6 +3,7 @@ package org.practice;
 
 import org.practice.Recurrsion.Factorial;
 import org.practice.Recurrsion.PrintDecreasingIncreasing;
+import org.practice.Recurrsion.TowerOfHanoi;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -28,9 +29,10 @@ public class Main {
         ll.printList();*/
 
         // Recursion calls
-        PrintDecreasingIncreasing.pdi(5);
+        // PrintDecreasingIncreasing.pdi(5);
 //        System.out.println(Factorial.fact(5));
-
+// ========================================================= Recursion =============
+        TowerOfHanoi.toh(5,10,12,11);
 
     }
 }
