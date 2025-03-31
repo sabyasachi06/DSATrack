@@ -2,6 +2,7 @@ package org.practice;
 
 
 import org.practice.Recurrsion.Factorial;
+import org.practice.Recurrsion.FirstIterationOfIndex;
 import org.practice.Recurrsion.PrintDecreasingIncreasing;
 import org.practice.Recurrsion.TowerOfHanoi;
 
@@ -32,7 +33,9 @@ public class Main {
         // PrintDecreasingIncreasing.pdi(5);
 //        System.out.println(Factorial.fact(5));
 // ========================================================= Recursion =============
-        TowerOfHanoi.toh(5,10,12,11);
+//        TowerOfHanoi.toh(5,10,12,11);
 
+        int index = FirstIterationOfIndex.getFirstIndexOfIteration(new int[] {2,4,3,5,6,3,8},0,8);
+        System.out.println(index);
     }
 }
