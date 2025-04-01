@@ -5,6 +5,8 @@ import org.practice.Recurrsion.Factorial;
 import org.practice.Recurrsion.FirstIterationOfIndex;
 import org.practice.Recurrsion.PrintDecreasingIncreasing;
 import org.practice.Recurrsion.TowerOfHanoi;
+import org.practice.linkedList.MergeTwoSortedLL;
+import org.practice.linkedList.SLinkedList;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -34,8 +36,13 @@ public class Main {
 //        System.out.println(Factorial.fact(5));
 // ========================================================= Recursion =============
 //        TowerOfHanoi.toh(5,10,12,11);
+/*
+        int indexFirst = FirstIterationOfIndex.getFirstIndexOfIteration(new int[] {2,4,3,5,6,3,8},0,3);
+        System.out.println("First occurrence index  -> "+indexFirst);
+        System.out.println("===================================");
 
-        int index = FirstIterationOfIndex.getFirstIndexOfIteration(new int[] {2,4,3,5,6,3,8},0,8);
-        System.out.println(index);
+        int indexLast = FirstIterationOfIndex.getIndexOfIterationFromLast(new int[] {2,4,3,5,6,3,8},0,3);
+        System.out.println("Last occurrence index  -> "+indexLast);*/
+        MergeTwoSortedLL.mergeSorted(new SLinkedList(new int[] {1,2,3,4,5}),new SLinkedList(new int[] {7,8,9,10,12}));
     }
 }

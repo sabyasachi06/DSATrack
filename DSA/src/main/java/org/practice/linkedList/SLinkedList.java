@@ -14,12 +14,24 @@ public class SLinkedList {
             this.val = val;
         }
     }
+    public SLinkedList (){
 
+    }
     public SLinkedList(int val) {
         Node newNode = new Node(val);
         head = newNode;
         tail = newNode;
         length = 1;
+    }
+
+    public SLinkedList(int[] val) {
+        Node newNode = new Node(val[0]);
+        head = newNode;
+        tail = newNode;
+        length = 1;
+        for (int i = 1; i < val.length; i++) {
+            addFirst(val[i]);
+        }
     }
 
     public void addFirst(int val) {
