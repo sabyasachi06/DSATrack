@@ -1,12 +1,11 @@
 package org.practice;
 
 
-import org.practice.Recurrsion.Factorial;
-import org.practice.Recurrsion.FirstIterationOfIndex;
-import org.practice.Recurrsion.PrintDecreasingIncreasing;
-import org.practice.Recurrsion.TowerOfHanoi;
+import org.practice.Recurrsion.*;
 import org.practice.linkedList.MergeTwoSortedLL;
 import org.practice.linkedList.SLinkedList;
+
+import java.util.ArrayList;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -43,6 +42,12 @@ public class Main {
 
         int indexLast = FirstIterationOfIndex.getIndexOfIterationFromLast(new int[] {2,4,3,5,6,3,8},0,3);
         System.out.println("Last occurrence index  -> "+indexLast);*/
-        MergeTwoSortedLL.mergeSorted(new SLinkedList(new int[] {1,2,3,4,5}),new SLinkedList(new int[] {7,8,9,10,12}));
+        /*MergeTwoSortedLL.mergeSorted(new SLinkedList(new int[] {1,2,3,4,5}),new SLinkedList(new int[] {7,8,9,10,12}));*/
+
+        /*ArrayList<String> combinations = GetKeyPadCombination.getCombinations("123");
+        System.out.println(combinations);*/
+
+        ArrayList<String> myPaths =GetStairPaths.getStairPath(4);
+        System.out.println(myPaths);
     }
 }
