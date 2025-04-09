@@ -47,7 +47,14 @@ public class Main {
         /*ArrayList<String> combinations = GetKeyPadCombination.getCombinations("123");
         System.out.println(combinations);*/
 
-        ArrayList<String> myPaths =GetStairPaths.getStairPath(4);
+        /*ArrayList<String> myPaths =GetStairPaths.getStairPath(4);
+        System.out.println(myPaths);*/
+
+        /*ArrayList<String> myPaths =GetMazePath.getMazePath(1,1,3,3);
+        System.out.println(myPaths);*/
+
+
+        ArrayList<String> myPaths =GetMazePathWithJump.getMazePathWithJump(1,1,3,3);
         System.out.println(myPaths);
     }
 }
