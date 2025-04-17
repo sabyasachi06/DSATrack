@@ -6,6 +6,8 @@ import org.practice.linkedList.MergeTwoSortedLL;
 import org.practice.linkedList.SLinkedList;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -54,7 +56,23 @@ public class Main {
         System.out.println(myPaths);*/
 
 
-        ArrayList<String> myPaths =GetMazePathWithJump.getMazePathWithJump(1,1,3,3);
-        System.out.println(myPaths);
+        /*ArrayList<String> myPaths =GetMazePathWithJump.getMazePathWithJump(1,1,3,3);
+        System.out.println(myPaths);*/
+
+        int row = 3;
+        int col = 4;
+        int[][] arr = new int[row][col];
+        /*for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[0].length; j++) {
+                arr[i][j] = scn.nextInt();
+            }
+        }*/
+        arr[0][0]=0; arr[0][1]=0; arr[0][2]=1; arr[0][3]=0;  // 0010
+        arr[1][0]=0; arr[1][1]=0; arr[1][2]=1; arr[1][3]=0;  // 0010
+        arr[2][0]=0; arr[2][1]=0; arr[2][2]=0; arr[2][3]=0;  // 0000
+
+        boolean[][] marked = new boolean[row][col];
+
+        FloodFillMaze.findPath(arr,0,0,"",marked);
     }
 }
