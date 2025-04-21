@@ -2,6 +2,9 @@ package org.practice.Recurrsion;
 
 import java.util.ArrayList;
 
+ /*ArrayList<String> myPaths =GetMazePath.getMazePath(1,1,3,3);
+        System.out.println(myPaths);*/
+
 public class GetMazePath {
 
     // source row and source column are 1,1 and we need to take the maze to the end corner i.2 dest row and dest column

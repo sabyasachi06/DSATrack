@@ -1,4 +1,6 @@
 package org.practice.Recurrsion;
+/*int indexFirst = FirstIterationOfIndex.getFirstIndexOfIteration(new int[] {2,4,3,5,6,3,8},0,3);
+        System.out.println("First occurrence index  -> "+indexFirst);*/
 
 public class FirstIterationOfIndex {
 

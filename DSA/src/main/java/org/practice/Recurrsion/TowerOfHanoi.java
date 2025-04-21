@@ -1,5 +1,7 @@
 package org.practice.Recurrsion;
 
+/*TowerOfHanoi.toh(5,10,12,11);*/
+
 public class TowerOfHanoi {
 
     /*

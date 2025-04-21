@@ -1,5 +1,7 @@
 package org.practice.Recurrsion;
 
+/*PrintEncodings.printEncodings("1203","");*/
+
 public class PrintEncodings {
 
     // print the encodings for any given integer
@@ -13,15 +15,15 @@ public class PrintEncodings {
         }
         // "123"
         //for single digit
-        char ch1 = input.charAt(0);                  // 1
-        String roq = input.substring(1);   // 2
-        int chv = ch1 - '0';                         // 3
-        char code = (char) ('a' + chv - 1);              // 4
-        if (chv == 0) {                                  // 5
+        char ch1 = input.charAt(0);
+        String roq = input.substring(1);
+        int chv = ch1 - '0';
+        char code = (char) ('a' + chv - 1);
+        if (chv == 0) {
             return;
         }
-        if (chv > 0 && chv<=9) {                         // 6
-            printEncodings(roq,encodings+code); // 7
+        if (chv > 0 && chv<=9) {
+            printEncodings(roq,encodings+code);
         }
         if (input.length()>=2 ) {
             //for first 2 digits

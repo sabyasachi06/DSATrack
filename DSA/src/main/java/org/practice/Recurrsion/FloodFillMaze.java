@@ -1,5 +1,7 @@
 package org.practice.Recurrsion;
 
+// FloodFillMaze.findPath(arr,0,0,"",marked);
+
 public class FloodFillMaze {
 
     public static void findPath(int[][] maze, int row, int col, String psf, boolean[][] marked) {

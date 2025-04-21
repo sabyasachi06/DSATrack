@@ -4,11 +4,14 @@ import java.util.ArrayList;
 
 public class GetStairPaths {
 
+    /*ArrayList<String> myPaths =GetStairPaths.getStairPath(4);
+        System.out.println(myPaths);*/
+
   public static ArrayList<String> getStairPath(int n){
       if (n==0){
-          ArrayList<String> bres0 = new ArrayList<>();
-          bres0.add("");
-          return bres0;
+          ArrayList<String> bres = new ArrayList<>();
+          bres.add("");
+          return bres;
       }
 
       if(n<0){

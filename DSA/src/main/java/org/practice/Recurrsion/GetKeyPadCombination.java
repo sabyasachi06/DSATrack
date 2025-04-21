@@ -3,6 +3,9 @@ package org.practice.Recurrsion;
 
 import java.util.ArrayList;
 
+/*ArrayList<String> combinations = GetKeyPadCombination.getCombinations("123");
+        System.out.println(combinations);*/
+
 public class GetKeyPadCombination {
                                               // 0  ,  1  ,  2  ,  3  ,  4  ,  5  ,   6   , 7  ,  8 ,   9
     static String[] globalCodes = new String[]{"?,","abc","def","ghi","jkl","mnop","qrst","uv","wxyz",".;"};
